@@ -48,4 +48,4 @@ Open `http://localhost:3000` in your browser.
 
 - **Email**: [gowthamgannaneedi@gmail.com](mailto:gowthamgannaneedi@gmail.com)
 - **LinkedIn**: [linkedin.com/in/gannamaneedi-gowtham](https://linkedin.com/in/gannamaneedi-gowtham)
-- **GitHub**: [github.com/gowthamgannaneedi-pixel](https://github.com/gowthamgannaneedi-pixel)
+- **GitHub**: [github.com/gowthamgannamaneedi-pixel](https://github.com/gowthamgannamaneedi-pixel)
