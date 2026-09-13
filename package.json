@@ -6,8 +6,7 @@
   "main": "index.html",
   "scripts": {
     "dev": "serve . -l 3000",
-    "start": "serve . -l 3000",
-    "build": "echo \"Static build complete. No compilation step required.\""
+    "start": "serve . -l 3000"
   },
   "keywords": [
     "portfolio",
