@@ -1,6 +1,7 @@
 # Operating System Files
 .DS_Store
 Thumbs.db
+push.bat
 
 # Editor directories and files
 .vscode/
