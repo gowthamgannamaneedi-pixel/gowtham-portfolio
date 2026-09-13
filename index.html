@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GANNAMANEEDI GOWTHAM — AI &amp; MERN Stack Developer</title>
+  <meta name="description" content="Portfolio of Gannamaneedi Gowtham — AI & MERN Stack Developer. Building AI-powered web applications and scalable digital experiences.">
+  
+  <!-- Curated Typography Hierarchy: Syne (Headings/Monoliths) + Plus Jakarta Sans (Body/Content) + Space Grotesk (Labels/Meta) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Syne:wght@700;800;900&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css?v=1.2">
+</head>
+<body class="cinematic-theme">
+
+  <!-- Interactive Ambient Cursor Glow Follower -->
+  <div id="ambient-glow" class="ambient-glow"></div>
+
+  <!-- Preloader Screen -->
+  <div id="preloader" class="preloader">
+    <div class="preloader-content">
+      <div class="preloader-brand">GOWTHAM<span>.</span></div>
+      <div class="preloader-spinner"></div>
+      <div class="progress-bar-container">
+        <div id="progress-bar" class="progress-bar"></div>
+      </div>
+      <div class="preloader-status">
+        <span class="status-label">LOADING PORTFOLIO</span>
+        <span id="progress-text" class="status-percent">0%</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Global Header Navigation -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#hero-track" class="brand-logo" aria-label="Home">
+        <span class="logo-text">GOWTHAM</span><span class="logo-dot">.</span>
+      </a>
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="#hero-track" class="nav-link active"><span class="nav-num">00</span> Home</a>
+        <a href="#about" class="nav-link"><span class="nav-num">01</span> About</a>
+        <a href="#projects" class="nav-link"><span class="nav-num">02</span> Projects</a>
+        <a href="#skills" class="nav-link"><span class="nav-num">03</span> Skills</a>
+        <a href="#experience" class="nav-link"><span class="nav-num">04</span> Experience</a>
+        <a href="#education" class="nav-link"><span class="nav-num">05</span> Education</a>
+        <a href="#contact" class="nav-link"><span class="nav-num">06</span> Contact</a>
+      </nav>
+      <a href="#contact" class="nav-cta magnetic-btn">
+        <span class="cta-pulse"></span>
+        <span>Let's Talk</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       HERO SECTION: Full-Screen Portrait Canvas + Title Sequence Overlay
+       ========================================================================= -->
+  <section id="hero-track" class="hero-scroll-track" aria-label="Hero Experience">
+    <div class="hero-sticky-viewport">
+      
+      <!-- Full-Screen 100vw x 100vh Portrait Canvas (Scrubbed 0-300 Frames via Scroll) -->
+      <div class="hero-canvas-background">
+        <canvas id="portrait-canvas"></canvas>
+      </div>
+
+      <!-- Clean Dark Gradient Overlay (Zero Haze on Face, Crystal-Clear Face Quality) -->
+      <div class="hero-backdrop-gradient"></div>
+
+      <!-- Hero Title Sequence Overlay -->
+      <div class="hero-content-layer">
+        <div class="hero-composition">
+          
+          <!-- Top Metadata Strip -->
+          <div class="hero-meta-strip">
+            <span class="meta-pill"><span class="badge-dot"></span> AVAILABLE FOR OPPORTUNITIES</span>
+            <span class="meta-divider">/</span>
+            <span class="meta-text">AI × FULL STACK</span>
+            <span class="meta-divider">/</span>
+            <span class="meta-text">REACT • NODE • AI</span>
+            <span class="meta-divider">/</span>
+            <span class="meta-text">HYDERABAD, INDIA</span>
+          </div>
+
+          <!-- Name & Titles -->
+          <div class="hero-typography">
+            <h1 class="hero-display-name">
+              <span class="name-first">GANNAMANEEDI</span>
+              <span class="name-last gradient-text">GOWTHAM</span>
+            </h1>
+            <div class="hero-title-group">
+              <div class="hero-role-badge">AI &amp; MERN STACK DEVELOPER</div>
+              <p class="hero-tagline">Creative Developer &amp; Visual Technologist</p>
+            </div>
+          </div>
+
+          <!-- Bottom Actions & Scroll Scrubber Indicator -->
+          <div class="hero-footer-row">
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary magnetic-btn">
+                <span>View Selected Works</span>
+                <span class="btn-arrow">→</span>
+              </a>
+              <a href="#about" class="btn btn-secondary magnetic-btn">
+                <span>About Me</span>
+              </a>
+            </div>
+            
+            <div class="hero-scroll-hint">
+              <div class="scroll-mouse-anim">
+                <div class="scroll-wheel-dot"></div>
+              </div>
+              <div class="scroll-status-text">
+                <span class="scroll-action">SCROLL TO EXPLORE</span>
+                <span id="frame-counter" class="frame-tag">FRAME 1 / 300</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 01: ABOUT — Personal Identity & Engineering Philosophy
+       ========================================================================= -->
+  <section id="about" class="content-section" data-section="about">
+    <div class="section-container">
+      
+      <div class="section-header-row">
+        <div class="section-num-tag">01 // ABOUT ME</div>
+        <div class="section-line"></div>
+      </div>
+
+      <!-- Large Statement -->
+      <div class="about-hero-statement reveal-on-scroll">
+        <h2 class="editorial-manifesto-title">
+          "I BUILD <span class="gradient-text">AI-POWERED</span><br>
+          DIGITAL EXPERIENCES."
+        </h2>
+      </div>
+
+      <!-- Editorial Grid: Identity Pillars + Bio Narrative -->
+      <div class="about-editorial-composition">
+        
+        <!-- Left: Identity Pillars Composition -->
+        <div class="about-identity-col reveal-on-scroll">
+          
+          <div class="identity-cards-grid">
+            
+            <div class="identity-pod" data-tilt>
+              <div class="pod-top-meta">
+                <span class="pod-label">ACADEMIC FOUNDATION</span>
+                <span class="pod-icon">✦</span>
+              </div>
+              <h3 class="pod-title">B.TECH AI &amp; ML</h3>
+              <p class="pod-desc">Specialized in Artificial Intelligence, Machine Learning algorithms, and intelligent systems design.</p>
+              <div class="pod-metric-badge">9.91 / 10 CGPA</div>
+            </div>
+
+            <div class="identity-pod" data-tilt>
+              <div class="pod-top-meta">
+                <span class="pod-label">FULL STACK ARCHITECTURE</span>
+                <span class="pod-icon">⚡</span>
+              </div>
+              <h3 class="pod-title gradient-text">MERN STACK</h3>
+              <p class="pod-desc">End-to-end web applications with React.js, Node.js, Express.js, MongoDB, and secure RESTful APIs.</p>
+              <div class="pod-metric-badge">Production Ready</div>
+            </div>
+
+            <div class="identity-pod" data-tilt>
+              <div class="pod-top-meta">
+                <span class="pod-label">INDUSTRY EXECUTION</span>
+                <span class="pod-icon">❖</span>
+              </div>
+              <h3 class="pod-title">FREELANCE DEVELOPER</h3>
+              <p class="pod-desc">Active client engineering since May 2026, delivering responsive platforms and AI integrations.</p>
+              <div class="pod-metric-badge">2026 — Present</div>
+            </div>
+
+            <div class="identity-pod" data-tilt>
+              <div class="pod-top-meta">
+                <span class="pod-label">INTELLIGENT SYSTEMS</span>
+                <span class="pod-icon">◈</span>
+              </div>
+              <h3 class="pod-title gradient-text">AI-POWERED APPS</h3>
+              <p class="pod-desc">Integrating Gemini API, voice synthesis, RAG architectures, and custom cognitive workflows.</p>
+              <div class="pod-metric-badge">LLM Orchestration</div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Right: Real Bio Narrative -->
+        <div class="about-narrative-col reveal-on-scroll">
+          
+          <div class="editorial-bio-card">
+            <div class="bio-quote-mark">“</div>
+            <p class="bio-body-text">
+              Motivated B.Tech AI&amp;ML student with expertise in AI, MERN Stack Development, Python, JavaScript, MongoDB, and REST APIs. Passionate about building AI-powered web applications and solving real-world problems through scalable, user-focused software solutions.
+            </p>
+            
+            <div class="bio-author-row">
+              <div class="bio-author-line"></div>
+              <div class="bio-author-info">
+                <span class="bio-author-name">GANNAMANEEDI GOWTHAM</span>
+                <span class="bio-author-sub">AI &amp; MERN Stack Developer • Chaitanya Deemed to be University</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Clean Metrics Bar -->
+          <div class="about-metrics-bar">
+            <div class="metric-pod">
+              <span class="metric-num gradient-text">9.91</span>
+              <span class="metric-label">CURRENT CGPA</span>
+            </div>
+            <div class="metric-sep"></div>
+            <div class="metric-pod">
+              <span class="metric-num">3+</span>
+              <span class="metric-label">DEPLOYED APPS</span>
+            </div>
+            <div class="metric-sep"></div>
+            <div class="metric-pod">
+              <span class="metric-num">2029</span>
+              <span class="metric-label">CLASS YEAR</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 02: PROJECTS — Major Visual Centerpiece Showcases
+       ========================================================================= -->
+  <section id="projects" class="content-section alternate-bg" data-section="projects">
+    <div class="section-container">
+      
+      <div class="section-header-row">
+        <div class="section-num-tag">02 // SELECTED WORKS</div>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="section-title-wrap reveal-on-scroll">
+        <h2 class="display-section-title">FEATURED CASE STUDIES</h2>
+        <p class="section-lead-text">Detailed architectural showcases of real-world full-stack products and AI-powered web applications.</p>
+      </div>
+
+      <div class="projects-showcase-stack">
+        
+        <!-- PROJECT 01: QUICKBILL POS -->
+        <article class="project-case-study reveal-on-scroll" id="project-quickbill">
+          <div class="project-case-grid">
+            
+            <!-- Left Info Column -->
+            <div class="project-info-col">
+              <div class="project-meta-top">
+                <span class="project-num">01</span>
+                <span class="project-domain-pill">AI SMART BILLING SYSTEM</span>
+              </div>
+              
+              <h3 class="project-name-heading">QUICKBILL<br><span class="gradient-text">POS</span></h3>
+              
+              <p class="project-desc-text">
+                Developed a POS (Point of Sale) application with product management, billing, and invoice generation.
+              </p>
+
+              <div class="project-features-list">
+                <div class="feat-item"><span class="feat-dot">✦</span> User authentication &amp; session security</div>
+                <div class="feat-item"><span class="feat-dot">✦</span> Real-time cart &amp; tax calculation engine</div>
+                <div class="feat-item"><span class="feat-dot">✦</span> Instant invoice generation &amp; live inventory sync</div>
+              </div>
+
+              <div class="project-tech-tags">
+                <span class="p-tech-tag">React.js</span>
+                <span class="p-tech-tag">Node.js</span>
+                <span class="p-tech-tag">MongoDB</span>
+                <span class="p-tech-tag">Vercel</span>
+              </div>
+
+              <div class="project-links-row">
+                <a href="https://quick-bill-pos.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary magnetic-btn">
+                  <span>Live Demo</span>
+                  <span class="btn-arrow">↗</span>
+                </a>
+                <a href="https://github.com/gowthamgannaneedi-pixel/QuickBill-POS" target="_blank" rel="noopener noreferrer" class="btn btn-secondary magnetic-btn">
+                  <span>GitHub</span>
+                  <span class="btn-arrow">↗</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Right Architectural Showcase -->
+            <div class="project-visual-col" data-tilt>
+              <div class="project-visual-card pos-theme">
+                <div class="pv-header">
+                  <div class="pv-window-controls">
+                    <span></span><span></span><span></span>
+                  </div>
+                  <div class="pv-url-label">quick-bill-pos.vercel.app</div>
+                  <div class="pv-live-badge"><span class="pulse-green"></span> PRODUCTION</div>
+                </div>
+
+                <div class="pv-blueprint-body">
+                  <div class="pv-arch-layer">
+                    <span class="layer-tag">SYSTEM ARCHITECTURE</span>
+                    <h4 class="layer-title">MERN Point of Sale Core</h4>
+                  </div>
+
+                  <div class="pv-specs-grid">
+                    <div class="pv-spec-item">
+                      <span class="spec-k">FRONTEND</span>
+                      <span class="spec-v">React.js Component Architecture</span>
+                    </div>
+                    <div class="pv-spec-item">
+                      <span class="spec-k">BACKEND</span>
+                      <span class="spec-v">Node.js &amp; Express REST Engine</span>
+                    </div>
+                    <div class="pv-spec-item">
+                      <span class="spec-k">DATA STORAGE</span>
+                      <span class="spec-v">MongoDB Atlas Database</span>
+                    </div>
+                    <div class="pv-spec-item">
+                      <span class="spec-k">DEPLOYMENT</span>
+                      <span class="spec-v">Vercel Edge Cloud</span>
+                    </div>
+                  </div>
+
+                  <div class="pv-highlight-strip">
+                    <span class="strip-label">CORE CAPABILITY:</span> Real-time data updates &amp; automated receipt generation
+                  </div>
+                </div>
+
+                <div class="pv-corner-accent tr"></div>
+                <div class="pv-corner-accent bl"></div>
+              </div>
+            </div>
+
+          </div>
+        </article>
+
+        <!-- PROJECT 02: LOHITHA PETROLEUMS -->
+        <article class="project-case-study reveal-on-scroll" id="project-lohitha">
+          <div class="project-case-grid">
+            
+            <!-- Left Info Column -->
+            <div class="project-info-col">
+              <div class="project-meta-top">
+                <span class="project-num">02</span>
+                <span class="project-domain-pill">PETROLEUM SERVICE WEBSITE</span>
+              </div>
+              
+              <h3 class="project-name-heading">LOHITHA<br><span class="gradient-text">PETROLEUMS</span></h3>
+              
+              <p class="project-desc-text">
+                Developed a responsive website for a petroleum service company with service details and contact information.
+              </p>
+
+              <div class="project-features-list">
+                <div class="feat-item"><span class="feat-dot">✦</span> Modern UI/UX layout optimized for enterprise clients</div>
+                <div class="feat-item"><span class="feat-dot">✦</span> Multi-device responsive design across all breakpoints</div>
+                <div class="feat-item"><span class="feat-dot">✦</span> Easy navigation with direct client inquiry channels</div>
+              </div>
+
+              <div class="project-tech-tags">
+                <span class="p-tech-tag">React.js</span>
+                <span class="p-tech-tag">CSS3</span>
+                <span class="p-tech-tag">Vercel</span>
+              </div>
+
+              <div class="project-links-row">
+                <a href="https://lohitha-petroleums.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary magnetic-btn">
+                  <span>Live Demo</span>
+                  <span class="btn-arrow">↗</span>
+                </a>
+                <a href="https://github.com/gowthamgannaneedi-pixel/Lohitha-Petroleums" target="_blank" rel="noopener noreferrer" class="btn btn-secondary magnetic-btn">
+                  <span>GitHub</span>
+                  <span class="btn-arrow">↗</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Right Architectural Showcase -->
+            <div class="project-visual-col" data-tilt>
+              <div class="project-visual-card petroleum-theme">
+                <div class="pv-header">
+                  <div class="pv-window-controls">
+                    <span></span><span></span><span></span>
+                  </div>
+                  <div class="pv-url-label">lohitha-petroleums.vercel.app</div>
+                  <div class="pv-live-badge"><span class="pulse-green"></span> PRODUCTION</div>
+                </div>
+
+                <div class="pv-blueprint-body">
+                  <div class="pv-arch-layer">
+                    <span class="layer-tag">PLATFORM ARCHITECTURE</span>
+                    <h4 class="layer-title">Responsive Enterprise Web Portal</h4>
+                  </div>
+
+                  <div class="pv-specs-grid">
+                    <div class="pv-spec-item">
+                      <span class="spec-k">INTERFACE</span>
+                      <span class="spec-v">React.js Responsive Component Hierarchy</span>
+                    </div>
+                    <div class="pv-spec-item">
+                      <span class="spec-k">SERVICES</span>
+                      <span class="spec-v">Bulk Fuel Logistics &amp; Lubricant Catalog</span>
+                    </div>
+                    <div class="pv-spec-item">
+                      <span class="spec-k">CLIENT PIPELINE</span>
+                      <span class="spec-v">Direct Lead &amp; Contact Inquiries</span>
+                    </div>
+                    <div class="pv-spec-item">
+                      <span class="spec-k">HOSTING</span>
+                      <span class="spec-v">Vercel Production Edge Deployment</span>
+                    </div>
+                  </div>
+
+                  <div class="pv-highlight-strip">
+                    <span class="strip-label">CORE CAPABILITY:</span> Seamless cross-platform responsiveness &amp; brand positioning
+                  </div>
+                </div>
+
+                <div class="pv-corner-accent tr"></div>
+                <div class="pv-corner-accent bl"></div>
+              </div>
+            </div>
+
+          </div>
+        </article>
+
+        <!-- PROJECT 03: NEGOTI AI -->
+        <article class="project-case-study reveal-on-scroll" id="project-negoti">
+          <div class="project-case-grid">
+            
+            <!-- Left Info Column -->
+            <div class="project-info-col">
+              <div class="project-meta-top">
+                <span class="project-num">03</span>
+                <span class="project-domain-pill">AI NEGOTIATION ASSISTANT</span>
+              </div>
+              
+              <h3 class="project-name-heading">NEGOTI<br><span class="gradient-text">AI</span></h3>
+              
+              <p class="project-desc-text">
+                Developed an AI-powered negotiation assistant with Gemini API integration.
+              </p>
+
+              <div class="project-features-list">
+                <div class="feat-item"><span class="feat-dot">✦</span> Intelligent conversation handling &amp; leverage detection</div>
+                <div class="feat-item"><span class="feat-dot">✦</span> Automated strategic response generation via Gemini API</div>
+                <div class="feat-item"><span class="feat-dot">✦</span> Real-time full-stack prompt pipeline and session state</div>
+              </div>
+
+              <div class="project-tech-tags">
+                <span class="p-tech-tag ai-tag">Gemini API</span>
+                <span class="p-tech-tag">React.js</span>
+                <span class="p-tech-tag">Node.js</span>
+                <span class="p-tech-tag">Vercel</span>
+              </div>
+
+              <div class="project-links-row">
+                <a href="https://negoti-ai.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary magnetic-btn">
+                  <span>Live Demo</span>
+                  <span class="btn-arrow">↗</span>
+                </a>
+                <a href="https://github.com/gowthamgannaneedi-pixel/negoti-ai" target="_blank" rel="noopener noreferrer" class="btn btn-secondary magnetic-btn">
+                  <span>GitHub</span>
+                  <span class="btn-arrow">↗</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Right Architectural Showcase -->
+            <div class="project-visual-col" data-tilt>
+              <div class="project-visual-card ai-theme">
+                <div class="pv-header">
+                  <div class="pv-window-controls">
+                    <span></span><span></span><span></span>
+                  </div>
+                  <div class="pv-url-label">negoti-ai.vercel.app</div>
+                  <div class="pv-live-badge ai-live-badge"><span class="pulse-magenta"></span> GEMINI LLM ACTIVE</div>
+                </div>
+
+                <div class="pv-blueprint-body">
+                  <div class="pv-arch-layer">
+                    <span class="layer-tag">COGNITIVE ENGINE</span>
+                    <h4 class="layer-title">Gemini-Powered Negotiation Agent</h4>
+                  </div>
+
+                  <div class="pv-specs-grid">
+                    <div class="pv-spec-item">
+                      <span class="spec-k">AI MODEL</span>
+                      <span class="spec-v">Google Gemini Pro API</span>
+                    </div>
+                    <div class="pv-spec-item">
+                      <span class="spec-k">FRONTEND</span>
+                      <span class="spec-v">React.js Interactive Chat Canvas</span>
+                    </div>
+                    <div class="pv-spec-item">
+                      <span class="spec-k">SERVER RUNTIME</span>
+                      <span class="spec-v">Node.js API Middleware</span>
+                    </div>
+                    <div class="pv-spec-item">
+                      <span class="spec-k">INTELLIGENCE</span>
+                      <span class="spec-v">Automated Counter-Offer Strategies</span>
+                    </div>
+                  </div>
+
+                  <div class="pv-highlight-strip">
+                    <span class="strip-label">CORE CAPABILITY:</span> Adaptive cognitive dialog &amp; automated deal optimization
+                  </div>
+                </div>
+
+                <div class="pv-corner-accent tr"></div>
+                <div class="pv-corner-accent bl"></div>
+              </div>
+            </div>
+
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 03: SKILLS — Interactive Technology Map
+       ========================================================================= -->
+  <section id="skills" class="content-section" data-section="skills">
+    <div class="section-container">
+      
+      <div class="section-header-row">
+        <div class="section-num-tag">03 // TECHNICAL STACK</div>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="section-title-wrap reveal-on-scroll">
+        <h2 class="display-section-title">TECHNICAL ECOSYSTEM</h2>
+        <p class="section-lead-text">Comprehensive stack across Artificial Intelligence, MERN full-stack development, database architecture, and developer tools.</p>
+      </div>
+
+      <!-- Domain Selector Tabs -->
+      <div class="skills-filter-bar reveal-on-scroll">
+        <button class="skill-filter-btn active" data-filter="all">All Technologies</button>
+        <button class="skill-filter-btn" data-filter="ai">AI &amp; Machine Learning</button>
+        <button class="skill-filter-btn" data-filter="frontend">Frontend Development</button>
+        <button class="skill-filter-btn" data-filter="backend">Backend &amp; APIs</button>
+        <button class="skill-filter-btn" data-filter="database">Databases &amp; Cloud</button>
+      </div>
+
+      <!-- Spacious Technology Cloud Field -->
+      <div class="skills-constellation-field reveal-on-scroll">
+        <canvas id="skills-network-canvas" class="skills-network-canvas"></canvas>
+
+        <div class="skills-items-container" id="skills-cloud">
+          
+          <!-- AI Stack -->
+          <div class="tech-item-bubble" data-category="ai">
+            <span class="bubble-dot ai-dot"></span>
+            <span class="bubble-name">Gemini API</span>
+            <span class="bubble-category">AI / LLM</span>
+          </div>
+
+          <div class="tech-item-bubble" data-category="ai">
+            <span class="bubble-dot ai-dot"></span>
+            <span class="bubble-name">Artificial Intelligence</span>
+            <span class="bubble-category">Core Domain</span>
+          </div>
+
+          <div class="tech-item-bubble" data-category="ai">
+            <span class="bubble-dot ai-dot"></span>
+            <span class="bubble-name">RAG Architecture</span>
+            <span class="bubble-category">AI Retrieval</span>
+          </div>
+
+          <div class="tech-item-bubble" data-category="ai">
+            <span class="bubble-dot ai-dot"></span>
+            <span class="bubble-name">Murf AI</span>
+            <span class="bubble-category">Voice Synthesis</span>
+          </div>
+
+          <div class="tech-item-bubble" data-category="ai">
+            <span class="bubble-dot ai-dot"></span>
+            <span class="bubble-name">Prompt Engineering</span>
+            <span class="bubble-category">System Prompts</span>
+          </div>
+
+          <!-- Languages -->
+          <div class="tech-item-bubble" data-category="backend">
+            <span class="bubble-dot"></span>
+            <span class="bubble-name">Python</span>
+            <span class="bubble-category">Language</span>
+          </div>
+
+          <div class="tech-item-bubble" data-category="frontend">
+            <span class="bubble-dot"></span>
+            <span class="bubble-name">JavaScript (ES6+)</span>
+            <span class="bubble-category">Language</span>
+          </div>
+
+          <div class="tech-item-bubble" data-category="backend">
+            <span class="bubble-dot"></span>
+            <span class="bubble-name">C++</span>
+            <span class="bubble-category">Language</span>
+          </div>
+
+          <div class="tech-item-bubble" data-category="database">
+            <span class="bubble-dot"></span>
+            <span class="bubble-name">SQL</span>
+            <span class="bubble-category">Database</span>
+          </div>
+
+          <!-- Frontend -->
+          <div class="tech-item-bubble" data-category="frontend">
+            <span class="bubble-dot"></span>
+            <span class="bubble-name">React.js</span>
+            <span class="bubble-category">Frontend Framework</span>
+          </div>
+
+          <div class="tech-item-bubble" data-category="frontend">
+            <span class="bubble-dot"></span>
+            <span class="bubble-name">HTML5 &amp; CSS3</span>
+            <span class="bubble-category">Web Standards</span>
+          </div>
+
+          <div class="tech-item-bubble" data-category="frontend">
+            <span class="bubble-dot"></span>
+            <span class="bubble-name">Tailwind CSS</span>
+            <span class="bubble-category">Styling</span>
+          </div>
+
+          <div class="tech-item-bubble" data-category="frontend">
+            <span class="bubble-dot"></span>
+            <span class="bubble-name">Bootstrap</span>
+            <span class="bubble-category">Grid Systems</span>
+          </div>
+
+          <!-- Backend -->
+          <div class="tech-item-bubble" data-category="backend">
+            <span class="bubble-dot"></span>
+            <span class="bubble-name">Node.js</span>
+            <span class="bubble-category">Backend Runtime</span>
+          </div>
+
+          <div class="tech-item-bubble" data-category="backend">
+            <span class="bubble-dot"></span>
+            <span class="bubble-name">Express.js</span>
+            <span class="bubble-category">API Framework</span>
+          </div>
+
+          <div class="tech-item-bubble" data-category="backend">
+            <span class="bubble-dot"></span>
+            <span class="bubble-name">REST APIs</span>
+            <span class="bubble-category">Web Services</span>
+          </div>
+
+          <div class="tech-item-bubble" data-category="backend">
+            <span class="bubble-dot"></span>
+            <span class="bubble-name">JWT Authentication</span>
+            <span class="bubble-category">Security</span>
+          </div>
+
+          <!-- Database & Cloud -->
+          <div class="tech-item-bubble" data-category="database">
+            <span class="bubble-dot"></span>
+            <span class="bubble-name">MongoDB</span>
+            <span class="bubble-category">NoSQL DB</span>
+          </div>
+
+          <div class="tech-item-bubble" data-category="database">
+            <span class="bubble-dot"></span>
+            <span class="bubble-name">MySQL</span>
+            <span class="bubble-category">Relational DB</span>
+          </div>
+
+          <div class="tech-item-bubble" data-category="database">
+            <span class="bubble-dot"></span>
+            <span class="bubble-name">Vercel</span>
+            <span class="bubble-category">Cloud Deployment</span>
+          </div>
+
+          <div class="tech-item-bubble" data-category="database">
+            <span class="bubble-dot"></span>
+            <span class="bubble-name">Git &amp; GitHub</span>
+            <span class="bubble-category">Version Control</span>
+          </div>
+
+          <div class="tech-item-bubble" data-category="backend">
+            <span class="bubble-dot"></span>
+            <span class="bubble-name">Postman</span>
+            <span class="bubble-category">API Testing</span>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 04: EXPERIENCE — Editorial Career Timeline
+       ========================================================================= -->
+  <section id="experience" class="content-section alternate-bg" data-section="experience">
+    <div class="section-container">
+      
+      <div class="section-header-row">
+        <div class="section-num-tag">04 // EXPERIENCE</div>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="section-title-wrap reveal-on-scroll">
+        <h2 class="display-section-title">WORK HISTORY</h2>
+        <p class="section-lead-text">Practical software development experience delivering client solutions and full-stack web applications.</p>
+      </div>
+
+      <div class="experience-editorial-layout reveal-on-scroll">
+        
+        <!-- Large Year Anchor -->
+        <div class="exp-year-anchor-col">
+          <div class="exp-big-year gradient-text">2026</div>
+          <div class="exp-spine-line"></div>
+          <div class="exp-present-text">PRESENT</div>
+        </div>
+
+        <!-- Role Details & Responsibilities -->
+        <div class="exp-details-col">
+          <div class="exp-meta-header">
+            <span class="exp-badge"><span class="badge-dot"></span> FREELANCE CLIENT WORK</span>
+            <span class="exp-duration">May 2026 – Present</span>
+          </div>
+
+          <h3 class="exp-role-heading">FREELANCE MERN STACK DEVELOPER</h3>
+
+          <div class="exp-responsibilities-stream">
+            <div class="resp-item">
+              <span class="resp-bullet">✦</span>
+              <p class="resp-text">Developed and deployed full-stack MERN applications for clients.</p>
+            </div>
+            
+            <div class="resp-item">
+              <span class="resp-bullet">✦</span>
+              <p class="resp-text">Built responsive web applications using React.js, Node.js, Express.js, and MongoDB.</p>
+            </div>
+
+            <div class="resp-item">
+              <span class="resp-bullet">✦</span>
+              <p class="resp-text">Integrated third-party APIs and AI services to enhance functionality.</p>
+            </div>
+
+            <div class="resp-item">
+              <span class="resp-bullet">✦</span>
+              <p class="resp-text">Designed and managed databases using MongoDB and optimized application performance.</p>
+            </div>
+
+            <div class="resp-item">
+              <span class="resp-bullet">✦</span>
+              <p class="resp-text">Communicated with clients to understand requirements and delivered quality solutions on time.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 05: EDUCATION — 9.91 Visual Centerpiece Monolith
+       ========================================================================= -->
+  <section id="education" class="content-section" data-section="education">
+    <div class="section-container">
+      
+      <div class="section-header-row">
+        <div class="section-num-tag">05 // EDUCATION</div>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="education-monolith-layout reveal-on-scroll" data-tilt>
+        
+        <!-- Huge 9.91 Centerpiece -->
+        <div class="edu-score-col">
+          <div class="edu-num-box">
+            <div class="edu-huge-number gradient-text">9.91</div>
+            <div class="edu-scale-tag">/ 10.0 CGPA</div>
+          </div>
+          <div class="edu-standing-pill">ACADEMIC DISTINCTION</div>
+        </div>
+
+        <!-- Academic Degree Information -->
+        <div class="edu-degree-col">
+          <div class="edu-level-label">UNDERGRADUATE DEGREE PROGRAM</div>
+          
+          <h3 class="edu-program-title">
+            B.TECH IN ARTIFICIAL INTELLIGENCE &amp; MACHINE LEARNING
+          </h3>
+
+          <div class="edu-university-name">
+            Chaitanya Deemed to be University
+          </div>
+
+          <div class="edu-details-row">
+            <div class="edu-detail-card">
+              <span class="ed-k">GRADUATION YEAR</span>
+              <span class="ed-v">2029</span>
+            </div>
+            <div class="edu-detail-card">
+              <span class="ed-k">DISCIPLINE</span>
+              <span class="ed-v">AI, ML &amp; Computer Science</span>
+            </div>
+            <div class="edu-detail-card">
+              <span class="ed-k">STATUS</span>
+              <span class="ed-v">Enrolled Scholar</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 06: ACHIEVEMENTS, STRENGTHS & LANGUAGES
+       ========================================================================= -->
+  <section id="achievements" class="content-section alternate-bg" data-section="achievements">
+    <div class="section-container">
+      
+      <div class="section-header-row">
+        <div class="section-num-tag">06 // CREDENTIALS &amp; ATTRIBUTES</div>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="section-title-wrap reveal-on-scroll">
+        <h2 class="display-section-title">CERTIFICATIONS &amp; HACKATHONS</h2>
+        <p class="section-lead-text">Recognized credentials and competitive hackathon builds in artificial intelligence and IoT.</p>
+      </div>
+
+      <!-- Certifications & Hackathons Pods -->
+      <div class="credentials-cards-grid reveal-on-scroll">
+        
+        <div class="credential-card" data-tilt>
+          <div class="cred-tag-pill cert-pill">CERTIFICATION</div>
+          <h3 class="cred-title">Murf AI Voice Generation Certificate</h3>
+          <p class="cred-desc">Completed hands-on training in AI voice synthesis, speech parameter modeling, and neural audio integration.</p>
+        </div>
+
+        <div class="credential-card" data-tilt>
+          <div class="cred-tag-pill hack-pill">HACKATHON</div>
+          <h3 class="cred-title">Base 44 Hackathon</h3>
+          <p class="cred-desc">Participated and built innovative AI-powered web solutions under rapid sprint deadlines.</p>
+        </div>
+
+        <div class="credential-card" data-tilt>
+          <div class="cred-tag-pill hack-pill">HACKATHON</div>
+          <h3 class="cred-title">IoT Hackathon</h3>
+          <p class="cred-desc">Participated and developed full-stack AI applications integrating hardware telemetry with web interfaces.</p>
+        </div>
+
+      </div>
+
+      <!-- Kinetic Scrolling Strengths Marquee -->
+      <div class="strengths-scrolling-container reveal-on-scroll">
+        <div class="strengths-section-header">
+          <span class="str-label">CORE PROFESSIONAL STRENGTHS</span>
+        </div>
+
+        <!-- Marquee Track 01 (Scrolling Left) -->
+        <div class="marquee-ribbon-wrapper">
+          <div class="marquee-ribbon-track scroll-left">
+            <div class="marquee-ribbon-content">
+              <span class="m-item"><span class="m-index">01</span> PROBLEM SOLVING</span>
+              <span class="m-sparkle">✦</span>
+              <span class="m-item"><span class="m-index">02</span> ANALYTICAL THINKING</span>
+              <span class="m-sparkle">✦</span>
+              <span class="m-item"><span class="m-index">03</span> QUICK LEARNER</span>
+              <span class="m-sparkle">✦</span>
+              <span class="m-item"><span class="m-index">04</span> TEAM COLLABORATION</span>
+              <span class="m-sparkle">✦</span>
+            </div>
+            <!-- Duplicate for Seamless Infinite Loop -->
+            <div class="marquee-ribbon-content" aria-hidden="true">
+              <span class="m-item"><span class="m-index">01</span> PROBLEM SOLVING</span>
+              <span class="m-sparkle">✦</span>
+              <span class="m-item"><span class="m-index">02</span> ANALYTICAL THINKING</span>
+              <span class="m-sparkle">✦</span>
+              <span class="m-item"><span class="m-index">03</span> QUICK LEARNER</span>
+              <span class="m-sparkle">✦</span>
+              <span class="m-item"><span class="m-index">04</span> TEAM COLLABORATION</span>
+              <span class="m-sparkle">✦</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Marquee Track 02 (Scrolling Right / Staggered) -->
+        <div class="marquee-ribbon-wrapper">
+          <div class="marquee-ribbon-track scroll-right">
+            <div class="marquee-ribbon-content">
+              <span class="m-item outline-text"><span class="m-index">05</span> ADAPTABILITY</span>
+              <span class="m-sparkle">✦</span>
+              <span class="m-item gradient-text"><span class="m-index">06</span> LEADERSHIP</span>
+              <span class="m-sparkle">✦</span>
+              <span class="m-item outline-text"><span class="m-index">07</span> COMMUNICATION</span>
+              <span class="m-sparkle">✦</span>
+              <span class="m-item gradient-text"><span class="m-index">08</span> TIME MANAGEMENT</span>
+              <span class="m-sparkle">✦</span>
+            </div>
+            <!-- Duplicate for Seamless Infinite Loop -->
+            <div class="marquee-ribbon-content" aria-hidden="true">
+              <span class="m-item outline-text"><span class="m-index">05</span> ADAPTABILITY</span>
+              <span class="m-sparkle">✦</span>
+              <span class="m-item gradient-text"><span class="m-index">06</span> LEADERSHIP</span>
+              <span class="m-sparkle">✦</span>
+              <span class="m-item outline-text"><span class="m-index">07</span> COMMUNICATION</span>
+              <span class="m-sparkle">✦</span>
+              <span class="m-item gradient-text"><span class="m-index">08</span> TIME MANAGEMENT</span>
+              <span class="m-sparkle">✦</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Spoken Languages Clean Bar -->
+      <div class="spoken-languages-bar reveal-on-scroll">
+        <div class="lang-title">SPOKEN LANGUAGES:</div>
+        <div class="lang-badges-group">
+          <div class="lang-item"><span class="lang-dot"></span> English</div>
+          <div class="lang-item"><span class="lang-dot"></span> Telugu</div>
+          <div class="lang-item"><span class="lang-dot"></span> Hindi</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 07: CONTACT — Memorable Closing Scene
+       ========================================================================= -->
+  <footer id="contact" class="footer-section" data-section="contact">
+    <div class="section-container">
+      
+      <div class="section-header-row center-header">
+        <div class="section-num-tag">07 // CONTACT</div>
+      </div>
+
+      <div class="closing-composition reveal-on-scroll">
+        
+        <!-- Large Statement Typography -->
+        <div class="closing-statement-wrap">
+          <div class="close-line">LET'S BUILD</div>
+          <div class="close-line gradient-text">SOMETHING</div>
+          <div class="close-line">GREAT.</div>
+        </div>
+
+        <p class="closing-lead-para">
+          Open for full-time AI engineering positions, MERN stack developer roles, and select freelance client engagements.
+        </p>
+
+        <!-- Direct Contact Channels -->
+        <div class="contact-channels-grid">
+          
+          <a href="mailto:gowthamgannaneedi@gmail.com" class="contact-card magnetic-btn">
+            <div class="card-icon">✉</div>
+            <div class="card-text-group">
+              <span class="card-meta">DIRECT EMAIL</span>
+              <span class="card-value">gowthamgannaneedi@gmail.com</span>
+            </div>
+            <span class="card-arrow">↗</span>
+          </a>
+
+          <a href="tel:+917997276601" class="contact-card magnetic-btn">
+            <div class="card-icon">☏</div>
+            <div class="card-text-group">
+              <span class="card-meta">PHONE / WHATSAPP</span>
+              <span class="card-value">+91-7997276601</span>
+            </div>
+            <span class="card-arrow">↗</span>
+          </a>
+
+          <a href="https://linkedin.com/in/gowtham-gannaneedi-83b957364" target="_blank" rel="noopener noreferrer" class="contact-card magnetic-btn">
+            <div class="card-icon">in</div>
+            <div class="card-text-group">
+              <span class="card-meta">LINKEDIN</span>
+              <span class="card-value">gowtham-gannaneedi-83b957364</span>
+            </div>
+            <span class="card-arrow">↗</span>
+          </a>
+
+          <a href="https://github.com/gowthamgannaneedi-pixel" target="_blank" rel="noopener noreferrer" class="contact-card magnetic-btn">
+            <div class="card-icon">⌥</div>
+            <div class="card-text-group">
+              <span class="card-meta">GITHUB REPOSITORIES</span>
+              <span class="card-value">gowthamgannaneedi-pixel</span>
+            </div>
+            <span class="card-arrow">↗</span>
+          </a>
+
+        </div>
+
+        <!-- Direct Action Buttons -->
+        <div class="closing-buttons-row">
+          <a href="mailto:gowthamgannaneedi@gmail.com" class="btn btn-primary magnetic-btn">
+            <span>Send Direct Message</span>
+            <span class="btn-arrow">→</span>
+          </a>
+          <a href="https://linkedin.com/in/gowtham-gannaneedi-83b957364" target="_blank" rel="noopener noreferrer" class="btn btn-secondary magnetic-btn">
+            <span>Connect on LinkedIn</span>
+            <span class="btn-arrow">↗</span>
+          </a>
+          <a href="https://github.com/gowthamgannaneedi-pixel" target="_blank" rel="noopener noreferrer" class="btn btn-secondary magnetic-btn">
+            <span>Browse GitHub</span>
+            <span class="btn-arrow">↗</span>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Strip -->
+      <div class="footer-bottom-strip">
+        <div class="fb-name">GANNAMANEEDI GOWTHAM</div>
+        <p class="fb-copy">© 2026. AI &amp; MERN Stack Developer.</p>
+        <div class="fb-status-pill">
+          <span class="fb-ping-dot"></span>
+          <span id="local-time-indicator">HYDERABAD, INDIA</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- App Script -->
+  <script src="app.js?v=1.1"></script>
+</body>
+</html>
