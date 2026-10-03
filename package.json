@@ -6,7 +6,11 @@
   "main": "index.html",
   "scripts": {
     "dev": "serve . -l 3000",
-    "start": "serve . -l 3000"
+    "start": "serve . -l 3000",
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
   },
   "keywords": [
     "portfolio",
