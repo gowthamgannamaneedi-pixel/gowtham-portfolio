@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gowthamgannamaneedi.vercel.app/sitemap.xml
