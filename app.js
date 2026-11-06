@@ -72,32 +72,42 @@
     return `${CONFIG.framePathPrefix}${padded}${CONFIG.frameExtension}`;
   }
 
+  let preloaderDismissed = false;
+  function dismissPreloader() {
+    if (preloaderDismissed) return;
+    preloaderDismissed = true;
+    if (preloader) {
+      preloader.classList.add('hidden');
+    }
+  }
+
   /**
    * Preloads all frames with browser asynchronous decoding.
    */
   function preloadImages() {
     let completed = 0;
 
+    // Safety fallback: Ensure portfolio always reveals even on slow mobile or failed frames
+    setTimeout(dismissPreloader, 2500);
+
     for (let i = 0; i < CONFIG.totalFrames; i++) {
       const img = new Image();
-      img.src = getFramePath(i);
+      let handled = false;
 
       const onDone = () => {
+        if (handled) return;
+        handled = true;
         images[i] = img;
         completed++;
         onFrameLoaded(completed, i);
       };
 
+      img.onload = onDone;
+      img.onerror = onDone;
+      img.src = getFramePath(i);
+
       if ('decode' in img) {
-        img.decode()
-          .then(onDone)
-          .catch(() => {
-            img.onload = onDone;
-            img.onerror = onDone;
-          });
-      } else {
-        img.onload = onDone;
-        img.onerror = onDone;
+        img.decode().then(onDone).catch(onDone);
       }
     }
   }
@@ -119,13 +129,9 @@
       isInitialFrameDrawn = true;
     }
 
-    // Dismiss preloader once complete
-    if (completed >= CONFIG.totalFrames) {
-      setTimeout(() => {
-        if (preloader) {
-          preloader.classList.add('hidden');
-        }
-      }, 150);
+    // Dismiss preloader once complete or once first 25 frames are ready
+    if (completed >= CONFIG.totalFrames || (completed >= 25 && isInitialFrameDrawn)) {
+      setTimeout(dismissPreloader, 150);
     }
   }
 
